@@ -1,12 +1,14 @@
 package edu.mum.cs545.model;
 
+import edu.mum.cs545.model.Enums.EnumStaff;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Fuculty {
+public class Faculty {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -15,11 +17,11 @@ public class Fuculty {
 	private String lastName;
 	private String email;
 	private String password;
-	private STUFF staff;
+	private EnumStaff staff;
 	
-	public Fuculty() {}
+	public Faculty() {}
 
-	public Fuculty(String firstName, String lastName, String email, String password, STUFF staff) {
+	public Faculty(String firstName, String lastName, String email, String password, EnumStaff staff) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
@@ -67,11 +69,11 @@ public class Fuculty {
 		this.password = password;
 	}
 
-	public STUFF getStaff() {
+	public EnumStaff getStaff() {
 		return staff;
 	}
 
-	public void setStaff(STUFF staff) {
+	public void setStaff(EnumStaff staff) {
 		this.staff = staff;
 	}
 	

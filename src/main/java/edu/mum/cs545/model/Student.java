@@ -1,5 +1,7 @@
 package edu.mum.cs545.model;
 
+import edu.mum.cs545.model.Enums.EnumEntry;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,31 +12,42 @@ public class Student {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private Integer id;
+	private Long id;
+	private String studentId;
 	private String barCode;
 	private String firstName;
 	private String lastName;
 	private String email;
 	private String password;
-	private ENTRY entry;
+	private EnumEntry enumEntry;
 	
 	public Student() {}
 
-	public Student(String barCode, String firstName, String lastName, String email, String password, ENTRY entry) {
+	public Student( String barCode, String studentId, String firstName, String lastName, String email, String password, EnumEntry enumEntry) {
+		this.studentId = studentId;
 		this.barCode = barCode;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.password = password;
-		this.entry = entry;
+		this.enumEntry = enumEntry;
 	}
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+
+	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public String getStudentId() {
+		return studentId;
+	}
+
+	public void setStudentId(String studentId) {
+		this.studentId = studentId;
 	}
 
 	public String getBarCode() {
@@ -76,14 +89,4 @@ public class Student {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	public ENTRY getEntry() {
-		return entry;
-	}
-
-	public void setEntry(ENTRY entry) {
-		this.entry = entry;
-	}
-	
-
 }
