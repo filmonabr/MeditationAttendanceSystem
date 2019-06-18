@@ -1,14 +1,12 @@
-package edu.mum.cs545.service.serviceImple;
+package edu.mum.cs545.service.serviceImpl;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import edu.mum.cs545.model.Course;
-import edu.mum.cs545.model.WEEK;
 import edu.mum.cs545.repository.CourseRepository;
 import edu.mum.cs545.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 public class CourseServiceImpl implements CourseService {
 	
@@ -55,7 +53,7 @@ public class CourseServiceImpl implements CourseService {
 	private List<Course> listCourse() {
 		
 		List<Course>  retu=new ArrayList<>();
-		retu.add(new Course("STC 508", "Science and Technology of Consciousness", WEEK.Two_WEEK));
+	/*	retu.add(new Course("STC 508", "Science and Technology of Consciousness", WEEK.Two_WEEK));
 		retu.add(new Course("SCI 506", "Science OF Creative Inteligence", WEEK.Two_WEEK));
 		retu.add(new Course("MVS 555", "Engaging Nature’s Government", WEEK.FOUR_WEEK));
 		retu.add(new Course("MATH 281", "Calculus 1", WEEK.FOUR_WEEK));
@@ -65,7 +63,7 @@ public class CourseServiceImpl implements CourseService {
 		retu.add(new Course("CS 363", "Computer Organization and Architecture", WEEK.FOUR_WEEK));
 		retu.add(new Course("CS 335", "Software Development", WEEK.FOUR_WEEK));
 		retu.add(new Course("MATH 286", "Linear Algebra 1", WEEK.FOUR_WEEK));
-		retu.add(new Course("CS 221", "Data Structures", WEEK.FOUR_WEEK));
+		retu.add(new Course("CS 221", "Data Structures", WEEK.FOUR_WEEK));*/
 		
 		return retu;
 	}

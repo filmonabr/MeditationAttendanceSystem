@@ -1,8 +1,9 @@
 package edu.mum.cs545.service;
 
+import edu.mum.cs545.model.Student;
+
 import java.util.List;
 
-import mum.edu.waa.Meditation_Attendance_System.model.Student;
 
 public interface StudentService {
        public void saveStudent();

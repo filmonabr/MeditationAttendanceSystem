@@ -1,10 +1,10 @@
 package edu.mum.cs545.repository;
 
+import edu.mum.cs545.model.Faculty;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import mum.edu.waa.Meditation_Attendance_System.model.Fuculty;
 @Repository
-public interface FucultyRepository extends CrudRepository<Fuculty, Long> {
+public interface FacultyRepository extends CrudRepository<Faculty, Long> {
 
 }

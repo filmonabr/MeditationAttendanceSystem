@@ -1,7 +1,5 @@
 package edu.mum.cs545.model;
 
-import edu.mum.cs545.model.Enums.EnumWeek;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -67,6 +65,7 @@ public class Block {
     public void setAttendance(Attendance attendance) {
         this.attendance = attendance;
     }
+
     public void sendMessage(){
 
         System.out.println("Email sent to ");

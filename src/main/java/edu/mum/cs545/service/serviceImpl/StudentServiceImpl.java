@@ -1,15 +1,14 @@
-package edu.mum.cs545.service.serviceImple;
+package edu.mum.cs545.service.serviceImpl;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.mum.cs545.model.Student;
+import edu.mum.cs545.repository.StudentRepository;
+import edu.mum.cs545.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import mum.edu.waa.Meditation_Attendance_System.model.ENTRY;
-import mum.edu.waa.Meditation_Attendance_System.model.Student;
-import mum.edu.waa.Meditation_Attendance_System.repository.StudentRepository;
-import mum.edu.waa.Meditation_Attendance_System.service.StudentService;
 @Service
 public class StudentServiceImpl implements StudentService {
 
@@ -54,11 +53,11 @@ public class StudentServiceImpl implements StudentService {
 	private List<Student> saveAllStudent(){
 		List<Student> retu=new ArrayList<>();
 		
-		retu.add(new Student("1111", "Abel", "Nedi", "abel@email.com", "test123", ENTRY.FEBRUARY));
-		retu.add(new Student("2222", "Terik", "Ahmed", "tarik@email.com", "test234", ENTRY.AUGUST));
-		retu.add(new Student("3333", "Devid", "Balack", "dev@email.com", "test543", ENTRY.MAY));
-		retu.add(new Student("4444", "Ti", "Xavi", "ti@email.com", "test098", ENTRY.NOVEMBER));
-		retu.add(new Student("5555", "John", "Fernado", "john@email.com", "test654", ENTRY.FEBRUARY));
+	/*	retu.add(new Student("1111", "Abel", "Nedi", "abel@email.com", "test123", EnumEntry.FEBRUARY));
+		retu.add(new Student("2222", "Terik", "Ahmed", "tarik@email.com", "test234", EnumEntry.AUGUST));
+		retu.add(new Student("3333", "Devid", "Balack", "dev@email.com", "test543", EnumEntry.MAY));
+		retu.add(new Student("4444", "Ti", "Xavi", "ti@email.com", "test098", EnumEntry.NOVEMBER));
+		retu.add(new Student("5555", "John", "Fernado", "john@email.com", "test654", EnumEntry.FEBRUARY));*/
 		
 		return retu;
 	}

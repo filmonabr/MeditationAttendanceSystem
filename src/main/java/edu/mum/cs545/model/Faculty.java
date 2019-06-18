@@ -1,7 +1,5 @@
 package edu.mum.cs545.model;
 
-import edu.mum.cs545.model.Enums.EnumStaff;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
