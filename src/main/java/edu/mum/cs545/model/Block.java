@@ -1,5 +1,7 @@
 package edu.mum.cs545.model;
 
+import edu.mum.cs545.model.Enums.EnumCourseType;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,7 +17,7 @@ public class Block {
     private LocalDate stDate;
     private LocalDate enDate;
     private Course course;
-    private EnumWeek enumWeek;
+    private EnumCourseType enumWeek;
     private Attendance attendance;
 
     public Long getId() {
@@ -50,11 +52,11 @@ public class Block {
         this.course = course;
     }
 
-    public EnumWeek getEnumWeek() {
+    public EnumCourseType getEnumWeek() {
         return enumWeek;
     }
 
-    public void setEnumWeek(EnumWeek enumWeek) {
+    public void setEnumWeek(EnumCourseType enumWeek) {
         this.enumWeek = enumWeek;
     }
 
